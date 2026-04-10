@@ -1,0 +1,513 @@
+/* ================================================
+   JAIME HERNANDEZ — PERSONAL PORTFOLIO
+   WGU D276 — Web Development Foundations
+
+   Color scheme:
+     Midnight Navy (#1a1a2e) — headers, nav, footer
+     Sky Blue (#72a0ef) — accents, borders, links
+     Warm Cream (#f4f1ec) — page background
+     Near Black (#080909) — body text
+   ================================================ */
+
+/* Reset default browser spacing so everything starts clean */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling when clicking anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base font and color for the whole page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ec;
+    color: #080909;
+    line-height: 1.75;
+}
+
+/* --- HEADER & NAVIGATION --- */
+
+header {
+    background-color: #1a1a2e;
+    color: #f4f1ec;
+    padding: 28px 36px 18px 36px;
+    border-bottom: 4px solid #72a0ef;
+}
+
+nav {
+    background-color: #16213e;
+    padding: 11px 36px;
+}
+
+/* Nav links are uppercase and spaced out for readability */
+nav a {
+    color: #a8a8b3;
+    text-decoration: none;
+    margin-right: 24px;
+    font-size: 0.92em;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.25s, border-color 0.25s;
+}
+
+/* --- MAIN CONTENT AREA --- */
+
+main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px 36px;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    background-color: #1a1a2e;
+    color: #6b6b7b;
+    text-align: center;
+    padding: 18px 36px;
+    font-size: 0.82em;
+    margin-top: 40px;
+    border-top: 4px solid #72a0ef;
+}
+
+/* --- HEADINGS --- */
+
+/* h1 uses a serif font to contrast with the sans-serif body text */
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.4em;
+    color: #f4f1ec;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+/* Section headings get a blue underline accent */
+h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.4em;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #467fe2;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #1a1a2e;
+    margin-bottom: 2px;
+}
+
+/* h4 is used for company names — italic to visually separate from job titles */
+h4 {
+    font-size: 0.95em;
+    color: #6b6b7b;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+/* --- TEXT ELEMENTS --- */
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #72a0ef;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* --- TABLES --- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 22px 0;
+    border: 2px solid #1a1a2e;
+}
+
+th {
+    background-color: #1a1a2e;
+    color: #f4f1ec;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 0.88em;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+td {
+    padding: 9px 14px;
+    border-bottom: 1px solid #d4d0c8;
+    color: #2b2b3d;
+}
+
+caption {
+    font-style: italic;
+    color: #6b6b7b;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 0.88em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d4d0c8;
+    margin: 28px 0;
+}
+
+strong {
+    color: #1a1a2e;
+}
+
+em {
+    color: #82acf3;
+}
+
+/* Mark element styled to look like a soft highlighter */
+mark {
+    background-color: #fce4e8;
+    color: #72a0ef;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+/* --- ARTICLE CARDS --- */
+
+/* Each job or content block gets a left-border accent and slight shadow */
+article {
+    background-color: #ffffff;
+    border-left: 4px solid #72a0ef;
+    border-radius: 0 6px 6px 0;
+    padding: 20px 22px;
+    margin: 16px 0;
+    box-shadow: 0 2px 6px rgba(26, 26, 46, 0.08);
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+/* --- FORMS --- */
+
+form {
+    margin-top: 18px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    color: #2b2b3d;
+    font-size: 0.92em;
+}
+
+/* All text inputs share the same base styling for consistency */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    max-width: 500px;
+    padding: 9px 12px;
+    border: 2px solid #d4d0c8;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.92em;
+    background-color: #faf9f6;
+    color: #2b2b3d;
+    transition: border-color 0.2s;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Submit button stands out with a solid blue background */
+input[type="submit"] {
+    background-color: #72a0ef;
+    color: #ffffff;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 18px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+/* --- MEDIA (AUDIO, VIDEO, IMAGES) --- */
+
+video, audio {
+    border-radius: 6px;
+    border: 2px solid #d4d0c8;
+    max-width: 100%;
+}
+
+/* --- Pseudo-class Selectors --- */
+
+/* Underline slides in on hover for a subtle interactive feel */
+nav a:hover {
+    color: #72a0ef;
+    border-bottom-color: #72a0ef;
+}
+
+a:hover {
+    color: #86acec;
+}
+
+/* Button lifts slightly on hover for a tactile feel */
+input[type="submit"]:hover {
+    background-color: #72a0ef;
+    transform: translateY(-1px);
+}
+
+/* Cards lift slightly on hover so they feel interactive */
+article:hover {
+    box-shadow: 0 4px 14px rgba(26, 26, 46, 0.14);
+    transform: translateY(-2px);
+}
+
+/* Alternating row colors make the table easier to scan */
+tr:nth-child(even) {
+    background-color: #f4f1ec;
+}
+
+/* Border turns blue when an input is focused so the user knows where they are */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #72a0ef;
+}
+
+/* --- Class Selectors --- */
+
+.section-block {
+    margin-bottom: 8px;
+}
+
+/* Blue accent for key phrases */
+.accent-text {
+    color: #72a0ef;
+    font-weight: 600;
+}
+
+/* Subdued gray for dates and secondary info */
+.muted-text {
+    color: #6b6b7b;
+    font-size: 0.9em;
+}
+
+.job-heading {
+    color: #1a1a2e;
+    font-weight: 700;
+}
+
+.date-line {
+    color: #6b6b7b;
+    font-size: 0.88em;
+    margin-bottom: 8px;
+}
+
+/* Contact info bar in the header */
+.contact-bar {
+    font-size: 0.92em;
+    color: #a8a8b3;
+    margin-top: 4px;
+}
+
+.contact-bar a {
+    color: #72a0ef
+}
+
+/* Stat cards displayed in a flex row */
+.metric-row {
+    display: flex;
+    gap: 14px;
+    margin: 18px 0;
+    flex-wrap: wrap;
+}
+
+.metric-box {
+    background-color: #ffffff;
+    border: 2px solid #1a1a2e;
+    border-radius: 6px;
+    padding: 14px 18px;
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #72a0ef;
+    display: block;
+    line-height: 1.2;
+}
+
+.metric-label {
+    font-size: 0.78em;
+    color: #6b6b7b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Small pill-shaped tags for listing technologies */
+.skill-chip {
+    display: inline-block;
+    background-color: #1a1a2e;
+    color: #f4f1ec;
+    padding: 3px 11px;
+    border-radius: 3px;
+    font-size: 0.78em;
+    font-weight: 600;
+    margin: 3px 3px 3px 0;
+    letter-spacing: 0.5px;
+}
+
+/* Color-coded proficiency labels */
+.level-advanced {
+    color: #2d8a4e;
+    font-weight: 600;
+    font-size: 0.88em;
+}
+
+.level-intermediate {
+    color: #b07d2b;
+    font-weight: 600;
+    font-size: 0.88em;
+}
+
+.media-wrapper {
+    margin: 16px 0;
+    text-align: center;
+}
+
+/* Radio button group laid out horizontally */
+.radio-set {
+    margin: 6px 0 6px 8px;
+}
+
+.radio-set label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.radio-set input[type="radio"] {
+    margin-right: 3px;
+    accent-color: #72a0ef;
+}
+
+/* References block at the bottom of the cover letter */
+.references-block {
+    background-color: #ffffff;
+    border: 2px solid #d4d0c8;
+    border-radius: 6px;
+    padding: 18px 22px;
+    margin-top: 16px;
+    font-size: 0.88em;
+}
+
+/* Hanging indent for APA-style references */
+.references-block p {
+    margin-bottom: 8px;
+    padding-left: 22px;
+    text-indent: -22px;
+}
+
+.profile-photo {
+    border: 4px solid #1a1a2e;
+    border-radius: 50%;
+    max-width: 170px;
+    margin: 8px 0;
+}
+
+/* Active nav link is brighter so you know which page you are on */
+.nav-active {
+    color: #f4f1ec;
+    border-bottom-color: #72a0ef;
+}
+
+/* --- ID-based Styles --- */
+
+#site-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.4em;
+    color: #f4f1ec;
+    letter-spacing: 2px;
+}
+
+#tagline {
+    color: #a8a8b3;
+    font-size: 1.05em;
+    margin-top: 2px;
+}
+
+/* The JavaScript date display box on the resume page */
+#current-date {
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border: 2px solid #d4d0c8;
+    border-radius: 4px;
+    font-size: 0.86em;
+    color: #6b6b7b;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* --- Descendant Selectors --- */
+
+/* Links inside the header contact bar pick up the blue accent */
+header .contact-bar a {
+    color: #72a0ef;
+}
+
+/* Lists inside main sections get consistent left padding */
+main section ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+main section ul li {
+    margin-bottom: 4px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* --- List Styles --- */
+
+/* Work duties use standard disc bullets */
+ul.work-duties {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Credentials use square bullets to visually differentiate them */
+ul.credential-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Let the browser render the native dropdown arrow */
+select {
+    appearance: auto;
+}

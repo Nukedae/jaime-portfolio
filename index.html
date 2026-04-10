@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime Hernandez | Résumé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Site header my name,tagline, and contact details -->
+    <header>
+        <h1 id="site-title">Jaime Hernandez</h1>
+        <p id="tagline">From Systems and Hardware to Software and Automation</p>
+        <p class="contact-bar">
+            <a href="/cdn-cgi/l/email-protection#59372c323c3d383c193e34383035773a3634"><span class="__cf_email__" data-cfemail="0a647f616f6e6b6f4a6d676b636624696567">[email&#160;protected]</span></a> &mdash;
+            <!-- Wrapped Phone number in a span so I can style it independently if needed -->
+            <span>559-373-1316</span> &mdash;
+            Portland, OR
+        </p>
+    </header>
+<!-- Navigation links to the three main pages of the portfolio -->
+    <nav>
+        <a href="resume.html" class="nav-active">Resume</a>
+        <a href="cover-letter.html">Cover Letter</a>
+        <a href="career-goals.html">Career Goals</a>
+    </nav>
+<!-- Main content area for resume -->
+    <main>
+        <!-- About Me section with a brief bio and some key metrics about my experience -->
+        <section class="section-block">
+            <h2>About Me</h2>
+            <p>
+                I’ve been working in technology for over five years, starting with hands on hardware 
+                and growing into systems and infrastructure work. Most of my experience comes from working 
+                directly with machines, diagnosing issues, and keeping environments running reliably. Over time,
+                I started focusing more on efficiency and process improvement, which led me into <strong>automation, scripting,
+                and software development.</strong> Right now I split my time between <em>configuring server/client pre-production platforms</em> 
+                in Hillsboro and studying software engineering at WGU with the goal of building the tools 
+                and systems I’ve spent years supporting.
+            </p>
+        </section>
+        <!-- Quick glance stats using divs styled as cards -->
+        <div class="metric-row">
+            <div class="metric-box">
+                <span class="metric-value">5+</span>
+                <span class="metric-label">Years in Tech</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-value">200+</span>
+                <span class="metric-label">Cases Monthly</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-value">2</span>
+                <span class="metric-label">Certifications</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-value">3</span>
+                <span class="metric-label">Tech Roles</span>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Work experience - each job is wrapped in its own article for semantic grouping-->
+        <section class="section-block">
+            <h2>Where I Have Worked</h2>
+            <!-- Job 1: Current role -->
+            <article>
+                <h3 class="job-heading">Systems Support Technician</h3>
+                <!-- Used h4 for the company/location line to keep heading hierarchy logical -->
+                <h4>Kelly Services Inc. &mdash; Hillsboro, OR</h4>
+                <p class="date-line">September 2023 &ndash; Present</p>
+                <ul class="work-duties">
+                    <li>Maintained and prepared datacenter lab environments, configuring networks, managing power infrastructure, and ensuring system logistics success.</li>
+                    <li>Deployed and set up Windows devices for end users, ensuring fast installation, full system readiness, and smooth integration with company networks.</li>
+                    <li>Used diagnostic tools to debug hardware-level platform issues, escalate faults, and document system behaviors.</li>
+                    <li>Regularly contributed to documentation, technician guides, and process improvements for system setups.</li>
+                    <li>Collaborated with cross-functional teams to streamline ticket resolution and maintain SLA compliance.</li>
+                    <li>Support, diagnose, and troubleshoot all components of (FW, BIOS, HW, and SW).</li>
+                    <li>Monitoring the health, performance and availability of cloud resources and services and performing routine maintenance tasks.</li>
+                    <li>Designed reusable Postman collections with environment variables to manage system update requests and high-volume ticketing operations through APIs.</li>
+                </ul>
+                <!-- Skill tags for this role-->
+                <div>
+                    <span class="skill-chip">Datacenter Ops</span>
+                    <span class="skill-chip">Windows</span>
+                    <span class="skill-chip">Networking</span>
+                    <span class="skill-chip">Postman</span>
+                    <span class="skill-chip">Cloud Monitoring</span>
+                </div>
+            </article>
+            <!-- Job 2: Apple -->
+            <article>
+                <h3 class="job-heading">Technical Specialist</h3>
+                <h4>Apple &mdash; Tigard, OR</h4>
+                <p class="date-line">June 2022 &ndash; September 2023</p>
+                <ul class="work-duties">
+                    <li>Delivered technical solutions for hardware, software, and networking issues, while achieving a high customer satisfaction rate.</li>
+                    <li>Provided efficient technical support in high-pressure situations, ensuring timely solutions for complex issues.</li>
+                    <li>Managed technical appointments efficiently, handling over 200 customer cases monthly guiding users through technical resolution.</li>
+                    <li>Assisted with device setup, data migration, and system optimizations, ensuring seamless user experiences.</li>
+                </ul>
+                <div>
+                    <span class="skill-chip">macOS</span>
+                    <span class="skill-chip">iOS</span>
+                    <span class="skill-chip">Customer-Facing Support</span>
+                </div>
+            </article>
+
+            <!-- Job 3: Best Buy -->
+            <article>
+                <h3 class="job-heading">Geek Squad PC &amp; Home Theater Agent</h3>
+                <h4>Best Buy &mdash; Visalia, CA</h4>
+                <p class="date-line">September 2020 &ndash; February 2021</p>
+                <ul class="work-duties">
+                    <li>Diagnosed and resolved hardware and software issues for PCs, home theater systems, and networking equipment.</li>
+                    <li>Built and configured custom PC setups, ensuring seamless integration of hardware, software, and network components.</li>
+                    <li>Educated clients on troubleshooting techniques, improving user satisfaction, reducing follow-ups and empowering users.</li>
+                </ul>
+                <div>
+                    <span class="skill-chip">PC Builds</span>
+                    <span class="skill-chip">Hardware Repair</span>
+                    <span class="skill-chip">Home Theater</span>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Skills table - four columns, five data rows plus header -->
+        <section class="section-block">
+            <h2>What I Know</h2>
+            <table>
+                <caption>Table 1: My Core Technical Skills Broken Down by Area as well as my Experience Level</caption>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Specific Technologies</th>
+                        <th>Comfort Level</th>
+                        <th>Time Spent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Operating Systems</strong></td>
+                        <td>Windows, macOS, iOS, Linux</td>
+                        <td><span class="level-advanced">Advanced</span></td>
+                        <td>5+ years</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Programming</strong></td>
+                        <td>Python, C#</td>
+                        <td><span class="level-intermediate">Intermediate</span></td>
+                        <td>2+ years</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Work Tools</strong></td>
+                        <td>Jira, Excel, Word, Postman</td>
+                        <td><span class="level-advanced">Advanced</span></td>
+                        <td>3+ years</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Networking</strong></td>
+                        <td>TCP/IP, DNS, DHCP, VPN</td>
+                        <td><span class="level-intermediate">Intermediate</span></td>
+                        <td>3+ years</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hardware</strong></td>
+                        <td>Server/Client Platforms, Custom Builds</td>
+                        <td><span class="level-advanced">Advanced</span></td>
+                        <td>5+ years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+        <!-- Education section - using an unordered list with line breaks between details -->
+        <section class="section-block">
+            <h2>Education</h2>
+            <ul class="credential-list">
+                <li>
+                    <strong>Western Governors University</strong><br>
+                    Bachelor of Science in Software Engineering<br>
+                    <span class="date-line">April 2026 &ndash; October 2026 (Expected)</span>
+                </li>
+                <li>
+                    <strong>Portland Community College</strong><br>
+                    Associate of Science Degree<br>
+                    <span class="date-line">January 2023 &ndash; June 2025</span>
+                </li>
+                <li>
+                    <strong>High School Diploma</strong><br>
+                    Clovis, CA<br>
+                    <span class="date-line">Graduated May 2015</span>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+        <!-- Certifications with an external hyperlink-->
+        <section class="section-block">
+            <h2>Certifications</h2>
+            <ul class="credential-list">
+                <li><strong>Google IT Support Professional Certificate</strong> &mdash; <span class="muted-text">April 2022 &ndash; May 2023</span></li>
+                <li><strong>API Fundamentals Student Expert</strong> (Postman) &mdash; <span class="muted-text">Completed July 2025</span></li>
+            </ul>
+            <p>You can read more about the Google program on the <a href="https://grow.google/certificates/it-support/" target="_blank">Grow with Google website</a>.</p>
+        </section>
+
+        <hr>
+        <!-- This div gets filled with today's date by the JavaScript below-->
+        <div id="current-date"></div>
+
+    </main>
+    <!-- Page footer-->
+    <footer>
+        <p>&copy; 2026 Jaime Hernandez &mdash; Built for WGU D276 Web Development Foundations</p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Place today's date inside the current-date div
+        var rightNow = new Date();
+        var displayOpts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var todayText = rightNow.toLocaleDateString('en-US', displayOpts);
+        document.getElementById('current-date').textContent = 'You are viewing this page on ' + todayText;
+
+        // Print a note to the developer console for grading verification
+        console.log('Jaime Hernandez resume loaded successfully — current date is ' + todayText);
+    </script>
+
+</body>
+</html>

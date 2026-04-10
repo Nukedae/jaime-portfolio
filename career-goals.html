@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime Hernandez | Career Goals</title>
+    <!-- Same external stylesheet used across all pages for consistent styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="site-title">Career Goals</h1>
+        <p class="contact-bar">
+            Jaime Hernandez &mdash;
+            <a href="mailto:nukedae@gmail.com">nukedae@gmail.com</a> &mdash;
+            Portland, OR
+        </p>
+    </header>
+    <!-- Navigation - same links on every for easy navigation -->
+    <nav>
+        <a href="resume.html">Resume</a>
+        <a href="cover-letter.html">Cover Letter</a>
+        <a href="career-goals.html" class="nav-active">Career Goals</a>
+    </nav>
+
+    <main>
+
+        <!-- About me section with a Locally sourced image -->
+        <section class="section-block">
+            <h2>My Experience So Far</h2>
+            <div class="media-wrapper">
+                <!-- Image is stored locally in the media folder, not linked from the web -->
+                <img src="media/Jaime.Hernandez.png" alt="Jaime Hernandez profile picture" class="profile-photo">
+            </div>
+            <p>
+                I am Jaime Hernandez, I have been working in technology since 2020. 
+                I began my career in hands on hardware and systems work and have continued to build experience in infrastructure and technical environments. 
+                I am driven by continuous improvement and feedback-based development, which has led me to explore automation, scripting, and software solutions. 
+                Whether working with BIOS configurations, production systems, or Python scripts, I focus on improving efficiency and reliability. 
+                This progression deeply motivated me to pursue a formal software engineering degree at WGU.
+            </p>
+        </section>
+
+        <hr>
+        <!-- Short-term goals -->
+        <section class="section-block">
+            <h2>What I Am Working Towards Right Now</h2>
+            <article>
+                <p>
+                    At the top of my list is finishing my <strong>Bachelor/Master of Science
+                    in Software Engineering</strong> at Western Governors University before the
+                    end of 2026. Every course I complete gets me even closer to having the formal
+                    credential that refelcts the practical knowledge I have been building on the
+                    job for years. Alongside the degree, I am sharpening my skills in Python,
+                    C#, and front-end web development with HTML, CSS, and JavaScript. 
+                </p>
+            </article>
+        </section>
+
+        <!-- Long-term goals -->
+        <section class="section-block">
+            <h2>Where I Can See Myself in Five Years</h2>
+            <article>
+                <p>
+                    Five years from now I want to be working as a <strong>full-stack software
+                    engineer</strong> or <strong>Automation engineer</strong> at a company that
+                    values people who understand both the code and the metal it runs on. I am
+                    especially drawn to work involving CI/CD pipelines, internal developer
+                    tooling, and cloud automation, because those are the areas where my
+                    infrastructure background gives me an edge that a pure computer science
+                    graduate maybe might not have. 
+
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Audio player - File is stored locally in the media folder -->
+        <section class="section-block">
+            <h2>Hear From Me</h2>
+            <div class="media-wrapper">
+                <audio controls>
+                    <source src="media/jaime intro.m4a" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p class="muted-text">A quick spoken introduction about who I am.</p>
+        </section>
+
+        <hr>
+
+        <!-- Video player - file is stored locally in the media folder -->
+        <section class="section-block">
+            <h2>Watch My Introduction</h2>
+            <div class="media-wrapper">
+                <video controls width="640">
+                    <source src="media/IMG_8803.mov" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+            <p class="muted-text">A brief video introduction.</p>
+        </section>
+
+        <hr>
+
+        <!-- Contact form - sends daata to the zybooks form viewer for processing -->
+        <section class="section-block">
+            <h2>Reach Out to Me</h2>
+            <p>
+                If anything on this site sparked your interest I would genuinely like to hear
+                from you. Drop your details below and I will be in touch thank you.
+            </p>
+
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                <!-- Text fields for name and company -->
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="first-name" placeholder="Your first name" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="last-name" placeholder="Your last name" required>
+
+                <label for="org">Company Name:</label>
+                <input type="text" id="org" name="company" placeholder="Where do you work?" required>
+                <!-- email field uses type=email for built-in validation -->
+                <label for="user-email">Email Address:</label>
+                <input type="email" id="user-email" name="email" placeholder="name@company.com" required>
+                <!-- Phone field uses type=tel for mobile keyboard optimization-->
+                <label for="user-phone">Phone Number:</label>
+                <input type="tel" id="user-phone" name="phone" placeholder="555-555-5555" required>
+                <!-- Textarea for longer  messages -->
+                <label for="user-msg">Message:</label>
+                <textarea id="user-msg" name="message" rows="5" placeholder="What would you like to talk about?" required></textarea>
+                <!-- Radio buttons only on can be selected at a time -->
+                <label>When is the best time to reach you?</label>
+                <div class="radio-set">
+                    <input type="radio" id="ct-am" name="contact-time" value="a.m." required>
+                    <label for="ct-am">a.m.</label>
+
+                    <input type="radio" id="ct-pm" name="contact-time" value="p.m.">
+                    <label for="ct-pm">p.m.</label>
+
+                    <input type="radio" id="ct-any" name="contact-time" value="anytime">
+                    <label for="ct-any">Anytime</label>
+                </div>
+                <!-- Dropdown selection list - single selection -->
+                <label for="pref-method">How would you prefer I reply?</label>
+                <select id="pref-method" name="contact-method" required>
+                    <option value="">-- Pick one --</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                </select>
+
+                <br>
+                <!-- submit button sends the form data to the action URL -->
+                <input type="submit" value="Send It Over">
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jaime Hernandez &mdash; Built for WGU D276 Web Development Foundations</p>
+    </footer>
+
+</body>
+</html>
